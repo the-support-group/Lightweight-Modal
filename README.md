@@ -35,9 +35,9 @@ define(['tsgmodal'], function() {
     modal.close();
 ```
 * Settings/events:
-```
-    All settings have a default value (as shown below).
 
+All settings have a default value (as shown below).
+```
     // Initialise the modal
     var modal = new $.tsgModal(
         [DOM Element],
