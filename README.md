@@ -8,24 +8,24 @@ A lightweight jQuery plugin modal box.
 * Install the plugin via Bower:
 
 Include the following line in the "dependencies" section of your bower.json file:
-
+```
     "tsg-lightweight-modal": "0.0.*"
-
+```
 * If you are using RequireJS simply include the plugin as a dependency:
-
+```
 define(['tsgmodal'], function() {
 
     // Your code goes here...
 
 });
-
+```
 * Creating a Modal from an existing DOM element:
-
+```
     // Initialise the modal
     var modal = new $.tsgModal([DOM Element]);
-
+```
 * Showing and hiding the modal:
-
+```
     var modal = new $.tsgModal([DOM Element]);
 
     // Show the modal.
@@ -33,9 +33,9 @@ define(['tsgmodal'], function() {
 
     // Hide the modal
     modal.close();
-
+```
 * Settings/events:
-
+```
     All settings have a default value (as shown below).
 
     // Initialise the modal
@@ -51,3 +51,4 @@ define(['tsgmodal'], function() {
             onClosed: function() {}     // Fired when the modal is closed.
         }
     );
+```
