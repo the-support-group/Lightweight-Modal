@@ -26,8 +26,6 @@ define(['tsgmodal'], function() {
 ```
 * Showing and hiding the modal:
 ```
-    var modal = new $.tsgModal([DOM Element]);
-
     // Show the modal.
     modal.open();
 
