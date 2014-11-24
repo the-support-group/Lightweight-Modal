@@ -1,0 +1,15 @@
+{
+    "name": "tsg-lightweight-modal",
+    "version": "0.0.1",
+    "authors": [
+        "The Support Group"
+    ],
+    "description": "A lightweight jQuery plugin modal box.",
+    "main": "tsg-lightweight-modal.js",
+    "dependencies": {
+        "jquery": "2.1.*"
+    },
+    "ignore": [
+        ".gitignore"
+    ]
+}
