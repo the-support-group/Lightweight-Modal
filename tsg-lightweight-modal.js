@@ -36,7 +36,7 @@
          * The modal constructor
          */
         var init = function() {
-            // Merge the default and ser settings.
+            // Merge the default and user settings.
             plugin.settings = $.extend({}, defaults, options);
 
             // Make the collection of elements available to the plugin.
@@ -88,6 +88,25 @@
 
             // Fire the onClosed event
             plugin.settings.onClosed();
+        };
+
+
+        /**
+         * Hide the modal, the overlay is not affected.
+         * This allows other elements to temporarily replace the modal.
+         */
+        plugin.hide = function()
+        {
+            plugin.el.hide();
+        };
+
+
+        /**
+         * Show the hidden modal.
+         */
+        plugin.show = function()
+        {
+            plugin.el.show();
         };
 
 
