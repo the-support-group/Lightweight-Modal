@@ -45,6 +45,11 @@
             // Initialise the overlay
             var overlay = $("<div id='" + plugin.settings.overlayId + "'></div>");
             $("body").append(overlay);
+            
+            // Close the modal when the overlay is clicked.
+            overlay.click(function() {
+                plugin.close();
+            });
         };
 
 
