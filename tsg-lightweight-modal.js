@@ -1,7 +1,7 @@
 /**
  * The Support Group Lightweight Modal jQuery plugin.
  *
- * @version 0.0.2
+ * @version 0.0.5
  * @link https://github.com/the-support-group/Lightweight-Modal
  */
 (function($) {
@@ -53,7 +53,7 @@
 
             // Close the modal when the escape key is pressed.
             $(document).keyup(function(e) {
-                if(e.keyCode == 27) {
+                if (e.keyCode === 27) {
                     plugin.close();
                 }
             });
