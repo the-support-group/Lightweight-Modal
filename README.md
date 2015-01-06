@@ -44,6 +44,8 @@ All settings have a default value (as shown below).
             top: 100,                   // Position from top of window.
             overlayOpacity: 0.2,        // The opacity of the overlay.
             overlayId: 'ef_overlay',    // The ID of the overlay element.
+            closeOnClick: true,         // Clicking off the modal will close the modal.
+            closeOnEscape: true,        // Pressing the escape key will close the modal.
 
             // Events
             onClosed: function() {}     // Fired when the modal is closed.
