@@ -1,7 +1,7 @@
 /**
  * The Support Group Lightweight Modal jQuery plugin.
  *
- * @version 0.0.5
+ * @version 0.0.6
  * @link https://github.com/the-support-group/Lightweight-Modal
  */
 (function($) {
