@@ -18,6 +18,8 @@
             top: 100,
             overlayOpacity: 0.2,
             overlayId: 'ef_overlay',
+            closeOnClick: true,
+            closeOnEscape: true,
 
             // Events
             onClosed: function() {}
@@ -47,16 +49,20 @@
             $("body").append(overlay);
 
             // Close the modal when the overlay is clicked.
-            overlay.click(function() {
-                plugin.close();
-            });
+            if (plugin.settings.closeOnClick === true) {
+                overlay.click(function () {
+                    plugin.close();
+                });
+            }
 
             // Close the modal when the escape key is pressed.
-            $(document).keyup(function(e) {
-                if (e.keyCode === 27) {
-                    plugin.close();
-                }
-            });
+            if (plugin.settings.closeOnEscape === true) {
+                $(document).keyup(function (e) {
+                    if (e.keyCode === 27) {
+                        plugin.close();
+                    }
+                });
+            }
         };
 
 
